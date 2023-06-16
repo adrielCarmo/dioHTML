@@ -11,8 +11,15 @@
 <body>
     <form name="formulario" onsubmit="alert('Enviei o Formulário!');" method="GET" action="#opa">
         Nome: <input type="text" name="nome" /><br>
-        Idade: <input type="number" name="idade"><br>
-        Senha: <input type="password" name="senha"><br>
+        <label>Cargo:</label>
+        <select name="role" id="" multiple>
+            <option value="Analista de Projetos">Analista de Projetos (PO)</option>
+            <option value="Gerente de Projetos">Gerente de Projetos (PM)</option>
+            <option value="Designer UX/UI">Designer UX/UI</option>
+            <option selected value="Desenvolvedor">Desenvolvedor</option>
+        </select><br>
+        <label>Mensagem: </label><textarea name="" id="" cols="30" rows="5"></textarea><br>
+        Assunto: <input type="password" name="senha"><br>
 
         <button type="button" onclick="alert('cliquei aqui!')">Clique aqui</button>
         <button type="reset">Limpar</button>
